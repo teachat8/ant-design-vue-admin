@@ -4,7 +4,7 @@
 
 //  后台获取的用户权限
  export function getCurrentAuthority() {
-   return ["user"];
+   return ["admin"];
  }
 
 // 校验权限
