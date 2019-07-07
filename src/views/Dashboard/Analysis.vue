@@ -3,11 +3,16 @@
     {{ $t("message")["app.dashboard.analysis.timeLabel"]}} :
     <a-date-picker></a-date-picker>
     <Chart :option="chartOption" style="height: 400px" />
+
+    <!-- If you want to highlight hardcoded source-code -->
+    <pre v-highlightjs="ChartCode"><code class="html"></code></pre>
+
   </div>
 </template>
 
 <script>
 import Chart from '../../components/Chart';
+import ChartCode from '!!raw-loader!../../components/Chart'; // Adding `!!` to a request will disable all loaders specified in the configuration
 // import random from 'lodash/random';
 import axios from 'axios';
 export default {
@@ -18,6 +23,7 @@ export default {
   data() {
     return {
       chartOption: {},
+      ChartCode
       // chartOption: {
       //   title: {
       //       text: 'ECharts 入门示例'

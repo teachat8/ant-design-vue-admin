@@ -11,6 +11,7 @@
 import zhCN from 'ant-design-vue/lib/locale-provider/zh_CN'; //中文包
 import enUS from 'ant-design-vue/lib/locale-provider/en_US'; //英文包
 import moment from 'moment';
+import 'moment/locale/zh-cn';
 export default {
   data() {
     return {

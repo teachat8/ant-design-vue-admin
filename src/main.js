@@ -1,4 +1,5 @@
 import Vue from "vue";
+import VueHighlightJS from 'vue-highlightjs'
 // import Antd from 'ant-design-vue';
 // import Button from 'ant-design-vue/lib/button';
 
@@ -28,6 +29,7 @@ import VueI18n from "vue-i18n";
 import enUS from './locale/enUS';
 import zhCN from './locale/zhCN';
 import queryString from 'query-string';
+import "highlight.js/styles/github.css"; // highlight的样式
 
 Vue.config.productionTip = false;
 Vue.use(Button);
@@ -45,6 +47,9 @@ Vue.use(LocaleProvider);
 Vue.use(Dropdown);
 Vue.use(DatePicker);
 Vue.use(VueI18n);
+
+// Tell Vue.js to use vue-highlightjs
+Vue.use(VueHighlightJS)
 
 const i18n = new VueI18n({
   locale: queryString.parse(location.search).locale || "zhCN",
