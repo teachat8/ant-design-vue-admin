@@ -1,6 +1,6 @@
 <template>
   <div :class="[`nav-theme-${navTheme}`, `nav-layout-${navLayout}` ]">
-    <a-layout id="components-layout-demo-side" style="min-height: 100vh">
+    <a-layout class="components-layout-demo-side" style="min-height: 100vh">
       <!-- 侧边栏 
         要使用自定义触发器，可以设置 :trigger="null" 来隐藏默认设定。
         theme: 主题颜色  
@@ -83,6 +83,9 @@ export default {
 </script>
 
 <style scoped>
+/* .components-layout-demo-side >>> .ant-menu-dark .ant-menu-item-selected {
+  color: #000;
+} */
 .trigger {
   padding: 0 20px;
   line-height: 64px;
