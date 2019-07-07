@@ -3,7 +3,17 @@ import Vue from "vue";
 // import Button from 'ant-design-vue/lib/button';
 
 //babel-plugins-import方式写法
-import {Button, Layout, Icon, Drawer, Radio, Menu, Form, Input} from 'ant-design-vue'
+import {
+  Button, 
+  Layout, 
+  Icon, 
+  Drawer, 
+  Radio, 
+  Menu, 
+  Form, 
+  Input,
+  Select
+} from 'ant-design-vue'
 import App from "./App.vue";
 import router from "./router";
 import store from "./store/modules/index";
@@ -23,6 +33,7 @@ Vue.component('Authorized', Authorized);
 Vue.use(Auth);
 Vue.use(Form);
 Vue.use(Input);
+Vue.use(Select);
 
 // Vue.use(Antd);
 
