@@ -35,6 +35,12 @@ Vue.use(Form);
 Vue.use(Input);
 Vue.use(Select);
 
+const IconFont = Icon.createFromIconfontCN({
+  scriptUrl: '//at.alicdn.com/t/font_1281240_201ogyz24gi.js', // 在 iconfont.cn 上生成
+})
+
+Vue.component("IconFont", IconFont)
+
 // Vue.use(Antd);
 
 new Vue({
