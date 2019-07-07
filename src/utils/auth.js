@@ -1,10 +1,12 @@
 /**
  * 用户的权限校验
  */
+const currentAuth = ["admin"];
+export { currentAuth };
 
 //  后台获取的用户权限
  export function getCurrentAuthority() {
-   return ["admin"];
+   return currentAuth;
  }
 
 // 校验权限
